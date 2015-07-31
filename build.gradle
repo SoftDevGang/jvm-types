@@ -1,8 +1,13 @@
 plugins {
     id 'java'
+    id 'groovy'
 }
 
 dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.4'
+    compile 'org.projectlombok:lombok:1.16.4'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+
     testCompile "junit:junit:4.12"
 }
 
