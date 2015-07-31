@@ -1,4 +1,4 @@
-package org.codecop.ki.model.values;
+package org.codecop.ki.model.descriptor;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

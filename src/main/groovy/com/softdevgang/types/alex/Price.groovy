@@ -1,3 +1,5 @@
+package com.softdevgang.types.alex
+
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
@@ -8,7 +10,7 @@ public class Price {
 	final Currency currency
 
 	/**
-	 * Allows creating a new price with named parameters in groovy: new Price(value: 20, currency: Currency.getInstance("RON"))
+	 * Allows creating a new price with named parameters in groovy: new com.softdevgang.types.alex.Price(value: 20, currency: Currency.getInstance("RON"))
 	 * @param parameters
 	 */
 	Price(parameters) {
@@ -24,7 +26,7 @@ public class Price {
 		return new Price(value: value * currencyRate, currency: currency)
 	}
 
-	def computeVAT(vatRatio) { // I'd like to rewrite the vatRatio to be a Percent type
+	def computeVAT(vatRatio) { // I'd like to rewrite the vatRatio to be a com.softdevgang.types.alex.Percent type
 		return new Price(value: vatRatio * value, currency: this.currency)
 	}
 

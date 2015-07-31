@@ -1,3 +1,4 @@
+package com.softdevgang.types.alex
 // Mostly experimental, haven't yet used it but want to refactor some of my code in this direction
 public class Percent{
 	def value
@@ -6,7 +7,7 @@ public class Percent{
 		return new Percent(value: value)
 	}
 
-	// Allows the following usage: 10432 * Percent.value(5)
+	// Allows the following usage: 10432 * com.softdevgang.types.alex.Percent.value(5)
 	def multiply(other){
 
 		// Should it multiply first and then divide or the other way around? AFAIK, this implementation has better precision

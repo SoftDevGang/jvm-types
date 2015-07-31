@@ -1,9 +1,7 @@
-package org.codecop.ki.model.values;
+package org.codecop.ki.model.descriptor;
 
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
-
-import org.codecop.ki.model.descriptor.ValueObject;
 
 /**
  * Value object identifying documents uniquely.
