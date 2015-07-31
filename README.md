@@ -41,6 +41,11 @@ Build the project using Gradle. Do
 ```
 in the project directory. Gradle and all dependencies will be downloaded.
 
+### Lombok support
+
+Intellij IDEA need a plugin to be able to handle public `public final String value;` without errors.
+Install the Lombok Plugin and it will be handled properly.
+
 ### Deployment
 
 Let us build something before we try to deploy it somewhere.
