@@ -1,14 +1,20 @@
 plugins {
     id 'java'
     id 'groovy'
+    id 'scala'
+    id "com.github.maiflai.scalatest" version "0.8"
 }
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
     compile 'org.projectlombok:lombok:1.16.4'
     compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'org.scala-lang:scala-library:2.11.7'
 
-    testCompile "junit:junit:4.12"
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.scalatest:scalatest_2.11:2.2.5'
+
+    testRuntime 'org.pegdown:pegdown:1.1.0'
 }
 
 repositories {
@@ -17,4 +23,8 @@ repositories {
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.5'
+}
+
+tasks.withType(ScalaCompile) {
+    scalaCompileOptions.useAnt = false
 }
